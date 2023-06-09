@@ -1,0 +1,32 @@
+Para realizar a rotulação de uma base de dados e aplicar o treinamento com a rede YOLO, siga os passos a seguir:
+
+Rotulação de imagens:
+
+Utilize o software LabelMe para rotular as imagens da sua base de dados. Você pode acessar o software por meio do link: http://labelme.csail.mit.edu/Release3.0/.
+Abra as imagens no LabelMe e desenhe caixas delimitadoras em torno dos objetos de interesse em cada imagem.
+Anote as classes dos objetos rotulados.
+Preparação da base de dados:
+
+Organize as imagens rotuladas em uma estrutura de diretórios apropriada. Cada imagem deve estar acompanhada de um arquivo de anotação que contenha as informações das caixas delimitadoras e suas respectivas classes.
+Download do Darknet:
+
+Acesse o site oficial do Darknet: https://pjreddie.com/darknet/yolo/.
+Faça o download da implementação do YOLO no repositório do Darknet.
+Configuração do Darknet:
+
+Siga as instruções do Darknet para configurar o ambiente e compilar o código-fonte.
+Certifique-se de ter as dependências necessárias instaladas e que o Darknet esteja funcionando corretamente.
+Configuração da rede YOLO:
+
+Utilize os arquivos de configuração do Darknet para definir os parâmetros da rede YOLO.
+Especifique o número de classes do seu conjunto de dados, bem como os caminhos para as imagens e arquivos de anotação.
+Treinamento com transfer learning:
+
+Caso esteja utilizando o ambiente COLAB, você pode seguir o link fornecido: https://colab.research.google.com/drive/1lTGZsfMaGUpBG4inDIQwIJVW476ibXk_#scrollTo=j0t221djS1Gk.
+Siga as instruções do notebook do COLAB para realizar o treinamento com transfer learning.
+Certifique-se de retreinar pelo menos duas classes, além das classes já treinadas previamente.
+Avaliação do modelo treinado:
+
+Após o treinamento, avalie o desempenho do modelo utilizando um conjunto de teste separado.
+Execute o modelo treinado nas imagens de teste e verifique a precisão e a qualidade das detecções realizadas.
+Certifique-se de seguir as instruções fornecidas nos links e na documentação do Darknet e do COLAB para obter uma implementação bem-sucedida. Lembre-se de adaptar os passos às suas necessidades específicas, como escolher as classes a serem retreinadas e configurar os parâmetros adequados para a sua base de dados.
